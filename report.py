@@ -1,23 +1,8 @@
-# This file handles the PDF report generation using reportlab.
-# Make sure to install it: pip install reportlab
-
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import inch
 
 def generate_pdf_report(save_path, file_path, scan_results, status_text):
-    """
-    Generates a PDF report from the scan results.
-
-    Args:
-        save_path (str): The full path where the PDF will be saved.
-        file_path (str): The path of the scanned file.
-        scan_results (dict): The dictionary of results from verify_file_type.
-        status_text (str): The final status text (e.g., "Status: LEGITIMATE").
-
-    Returns:
-        bool: True on success, False on failure.
-    """
     try:
         c = canvas.Canvas(save_path, pagesize=A4)
         width, height = A4  # (595.27, 841.89)

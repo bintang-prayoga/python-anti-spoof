@@ -92,4 +92,3 @@ coll = COLLECT(
     upx_exclude=[],
     name='FileScannerApp', # <-- Make sure this name matches the one in EXE
 )
-
