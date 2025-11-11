@@ -1,7 +1,3 @@
-Tentu, berikut adalah terjemahan dari teks tersebut ke dalam bahasa Indonesia.
-
------
-
 # Pemindai Metadata File (python-anti-spoof)
 
 Repositori ini berisi aplikasi kecil PyQt5 yang memindai file untuk menentukan tipe aslinya (menggunakan python-magic), mengumpulkan metadata (ukuran, stempel waktu), menghitung hash SHA256, dan dapat membuat laporan PDF.
