@@ -134,16 +134,30 @@ pyinstaller --clean main.spec
 ./dist/FileScannerApp/FileScannerApp.exe
 ```
 
-## Tambahan: Membuat laporan PDF
+### Screenshot Aplikasi
 
-Aplikasi ini menggunakan `report.py` (ReportLab) untuk membuat laporan PDF. Jika Anda berencana menggunakan fitur "Simpan Laporan", instal ReportLab:
+Berikut beberapa tangkapan layar aplikasi. Klik gambar untuk melihat versi ukuran penuh.
 
-```bash
-pip install reportlab
-```
+<p align="center">
+  <a href="https://media.discordapp.net/attachments/819910038155952172/1437641111760797726/image.png?ex=6913fb1f&is=6912a99f&hm=723d68c56ae1fdc0c6b8138218eae9833ee7f991c0090f49d75c45aeb8b910e7&=&format=webp&quality=lossless&width=816&height=750">
+    <img alt="Tampilan utama aplikasi" src="https://media.discordapp.net/attachments/819910038155952172/1437641111760797726/image.png?ex=6913fb1f&is=6912a99f&hm=723d68c56ae1fdc0c6b8138218eae9833ee7f991c0090f49d75c45aeb8b910e7&=&format=webp&quality=lossless&width=816&height=750" width="640" />
+  </a>
+  <br/>
+  <em>Tampilan utama aplikasi</em>
+</p>
 
-## Gerbang kualitas (daftar periksa cepat)
+<p align="center">
+  <a href="https://media.discordapp.net/attachments/819910038155952172/1437641112255729744/image.png?ex=6913fb1f&is=6912a99f&hm=24bb64ace3f0cb1f8e352fb3b68b64cade158ad960dde53ce03c532bf8b02404&=&format=webp&quality=lossless&width=803&height=743">
+    <img alt="Tampilan saat file di-scan" src="https://media.discordapp.net/attachments/819910038155952172/1437641112255729744/image.png?ex=6913fb1f&is=6912a99f&hm=24bb64ace3f0cb1f8e352fb3b68b64cade158ad960dde53ce03c532bf8b02404&=&format=webp&quality=lossless&width=803&height=743" width="640" />
+  </a>
+  <br/>
+  <em>Tampilan ketika file di-scan</em>
+</p>
 
-  * [ ] GUI dimulai saat menjalankan `python main.py`.
-  * [ ] `verify_file_type` mengembalikan *dict* dengan kunci: `extension`, `detected_mime`, `description`, `hash_sha256`, `size`, `creation_time`, `modified_time`.
-  * [ ] Pembuatan PDF melalui `report.py` berhasil ketika `reportlab` diinstal.
+<p align="center">
+  <a href="https://media.discordapp.net/attachments/819910038155952172/1437641112746721363/image.png?ex=6913fb1f&is=6912a99f&hm=3689bcce37f3a2f5d263550b9e46448f537029f9b3d362c1f24487a579020be8&=&format=webp&quality=lossless&width=1058&height=747">
+    <img alt="Contoh laporan PDF" src="https://media.discordapp.net/attachments/819910038155952172/1437641112746721363/image.png?ex=6913fb1f&is=6912a99f&hm=3689bcce37f3a2f5d263550b9e46448f537029f9b3d362c1f24487a579020be8&=&format=webp&quality=lossless&width=1058&height=747" width="720" />
+  </a>
+  <br/>
+  <em>Contoh hasil laporan file (PDF)</em>
+</p>
